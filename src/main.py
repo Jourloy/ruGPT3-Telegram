@@ -84,14 +84,16 @@ def asnwer(message):
     if ('/generate=' in message.text):
         str = message.text.split('=')
         if (len(str[1]) >= 1):
+            print('>> Generate')
             amountGen += 1
             answer = generate(str[1])
             bot.send_message(message.chat.id, answer)
     else:
+        print('>> Generate')
         amountGen += 1
         answer = generate(message.text)
         bot.send_message(message.chat.id, answer)
 
 if __name__ == '__main__':
-    print('>> Run bot')
+    print('>> Run bot \n')
     bot.polling(none_stop=True)
