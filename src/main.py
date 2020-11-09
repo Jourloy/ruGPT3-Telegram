@@ -3,8 +3,6 @@ import telebot
 import config
 from transformers import AutoTokenizer, GPT2LMHeadModel
 
-amountGen = 0
-
 print('>> Run tokenizer')
 tokenizer = AutoTokenizer.from_pretrained("sberbank-ai/rugpt2large")
 print('>> Run model')
@@ -73,24 +71,16 @@ do_sample = True
 num_return_sequences = 1
     """)
 
-@bot.message_handler(commands=['info'])
-def handle_settings(message):
-    bot.send_message(message.chat.id, """
-Amount generation: {}
-    """.format(amountGen))
-
 @bot.message_handler(content_types=["text"])
 def asnwer(message):
     if ('/generate=' in message.text):
         str = message.text.split('=')
         if (len(str[1]) >= 1):
             print('>> Generate')
-            amountGen += 1
             answer = generate(str[1])
             bot.send_message(message.chat.id, answer)
     else:
         print('>> Generate')
-        amountGen += 1
         answer = generate(message.text)
         bot.send_message(message.chat.id, answer)
 
