@@ -1,1 +1,1 @@
-TOKEN = '1209564222:AAHJDAhV-qiX64pJUdwDbnxk0-MfRhiEuyM'
+TOKEN = '1209564222:AAHJDAhV-qiX64pJUdwDbnxk0-MfRhiEuyM' # Revoked
