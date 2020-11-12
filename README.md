@@ -9,18 +9,18 @@ ____
 5. Type `pip install -r requirements.txt`
 6. Type `python src/main.py` for run
 ____
-### Commands:
-## /start
+## Commands:
+### /start
 Get info about bot commands
 
-## /help
+### /help
 Get info about bot commands too :)
 
-## /author
+### /author
 Get info about author of this bot
 
-## /settings
+### /settings
 Get info about settings of generation
 
-## /generate= or any other text
+### /generate= or any other text
 Generate text based on your
