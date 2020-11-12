@@ -24,3 +24,5 @@ Get info about settings of generation
 
 ### /generate= or any other text
 Generate text based on your
+____
+Used model trained by [Sberbank-ai](https://github.com/sberbank-ai/ru-gpts)
