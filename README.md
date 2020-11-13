@@ -4,7 +4,10 @@ ____
 ### Install:
 1. Download repository
 2. Unzip anywhere
-3. Change bot token in **src/cofing.py**
+3. Create **src/cofing.py** with this code:
+```
+TOKEN = 'your token here
+```
 4. Open folder in cmd/terminal
 5. Type `pip install -r requirements.txt`
 6. Type `python src/main.py` for run
