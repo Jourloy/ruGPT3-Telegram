@@ -6,7 +6,7 @@ ____
 2. Unzip anywhere
 3. Create **src/cofing.py** with this code:
 ```
-TOKEN = 'your token here
+TOKEN = 'your token here'
 ```
 4. Open folder in cmd/terminal
 5. Type `pip install -r requirements.txt`
