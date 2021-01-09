@@ -28,7 +28,7 @@ def generate(text):
 
 @bot.message_handler(commands=['start'])
 def handle_start(message):
-	bot.send_message(message.chat.id, """
+    bot.send_message(message.chat.id, """
 Привет! Можешь просто отправить мне текст и я сгенерирую новый на его основе.
 
 Чтобы узнать об авторе, введи или нажми на /author
@@ -55,8 +55,6 @@ def handle_author(message):
 Telegram: @JOURLOY
 GitHub: github.com/Jourloy
 Написано на Python
-
-Используется модель ruGPT2Large (github.com/sberbank-ai/ru-gpts)
     """)
 
 @bot.message_handler(commands=['settings'])
